@@ -1,0 +1,29 @@
+{
+  "name": "wp-renovate-mono-lib-a",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/wp-renovate-mono-lib-a/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/wp-renovate-mono-lib-a",
+        "main": "packages/wp-renovate-mono-lib-a/src/index.ts",
+        "tsConfig": "packages/wp-renovate-mono-lib-a/tsconfig.lib.json",
+        "assets": ["packages/wp-renovate-mono-lib-a/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/wp-renovate-mono-lib-a/**/*.ts",
+          "packages/wp-renovate-mono-lib-a/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
