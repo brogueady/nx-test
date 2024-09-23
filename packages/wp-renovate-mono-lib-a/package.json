@@ -1,0 +1,15 @@
+{
+  "name": "@at/wp-renovate-mono-lib-a",
+  "version": "5.3.13",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@at/wp-renovate-mono-lib-b": "file:../wp-renovate-mono-lib-b"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.atcloud.io/AutoTrader/wp-renovate-mono/tree/main/packages/wp-renovate-mono-lib-a"
+  }
+}

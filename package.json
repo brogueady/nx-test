@@ -1,0 +1,32 @@
+{
+  "name": "org",
+  "version": "0.0.2",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "version-test": "nx release --skip-publish --verbose"
+  },
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@nx/devkit": "19.7.4",
+    "@nx/eslint-plugin": "19.7.4",
+    "@nx/js": "19.7.4",
+    "@nx/linter": "19.7.4",
+    "@types/node": "18.19.9",
+    "@typescript-eslint/eslint-plugin": "7.16.1",
+    "@typescript-eslint/parser": "7.16.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "husky": "^8.0.0",
+    "nx": "19.7.4",
+    "prettier": "^2.6.2",
+    "typescript": "5.5.3",
+    "verdaccio": "^5.0.4",
+    "yargs": "^17.7.2"
+  },
+  "nx": {
+    "includedScripts": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "wp-renovate-mono",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "local-registry:start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "./tools/local-registry.sh"
+      }
+    },
+    "local-registry": {
+      "executor": "@nx/js:verdaccio",
+      "options": {
+        "host": "127.0.0.1",
+        "port": 4873,
+        "config": ".verdaccio/conf/config.yaml",
+        "storage": "tmp/local-registry/storage"
+      }
+    }
+  }
+}
