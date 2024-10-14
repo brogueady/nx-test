@@ -1,3 +1,15 @@
+## 3.2.11 (2024-10-14)
+
+
+### 🩹 Fixes
+
+- patch
+
+
+### ❤️  Thank You
+
+- Ade Brogan
+
 ## 2.0.9 (2024-09-23)
 
 This was a version bump only for wp-renovate-mono-lib-b to align it with other projects, there were no code changes.
