@@ -1,4 +1,9 @@
 {
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
+  },
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
@@ -11,7 +16,7 @@
       },
       "preVersionCommand": "npx nx run-many -t build"
     },
-    "releaseTagPattern":"{projectName}-{version}",
+    "releaseTagPattern": "{projectName}-{version}",
     "projectsRelationship": "independent",
     "changelog": {
       "projectChangelogs": true
@@ -41,10 +46,7 @@
     }
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -62,9 +64,5 @@
   "affected": {
     "defaultBase": "main"
   },
-  "pluginsConfig": {
-    "@nx/js": {
-      "analyzeSourceFiles": true
-    }
-  }
+  "useLegacyCache": true
 }
