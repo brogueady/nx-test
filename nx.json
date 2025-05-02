@@ -12,7 +12,8 @@
       "conventionalCommits": true,
       "generatorOptions": {
         "updateDependents": "auto",
-        "packageRoot": "dist/packages/{projectName}"
+        "packageRoot": "dist/packages/{projectName}",
+        "preserveLocalDependencyProtocols": false
       },
       "preVersionCommand": "npx nx run-many -t build"
     },
