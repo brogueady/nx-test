@@ -5,4 +5,4 @@ wpRenovateMonoLibB()
 export function wpRenovateMonoLibA(): string {
   return 'wp-renovate-mono-lib-a';
 }
-// feat 11
+// feat 12
